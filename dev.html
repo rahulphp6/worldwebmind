@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>World Web Minds - Home</title>
+    <!-- Web Fonts -->
+    <link href="css/css.css" rel="stylesheet">
+
+    <!-- Vendor Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/themify.css" rel="stylesheet" type="text/css">
+    <link href="css/scrollbar.min.css" rel="stylesheet" type="text/css">
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="css/cubeportfolio.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme Styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/global.css" rel="stylesheet" type="text/css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" id="zsiqscript" defer="defer"
+        src="js/widget"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.migrate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript">
+        var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+            { widgetcode: "ad0878a604257a7745edb28b7ab2eceb916db4b8b19b68a1707c5e68211ae561", values: {}, ready: function () { } };
+        var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+        s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+    </script>
+</head>
+
+<body>
+    <div id="zsiqwidget"></div>
+    <link href="css/hero.css" rel="stylesheet">
+    <link href="css/services.css" rel="stylesheet" type="text/css">
+
+    <!-- End Head -->
+
+    <!-- Body -->
+
+
+
+    <!--========== HEADER ==========-->
+    <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+        <!-- Navbar -->
+        <div class="s-header__navbar">
+            <div class="s-header__container">
+                <div class="s-header__navbar-row">
+                    <div class="s-header__navbar-row-col">
+                        <!-- Logo -->
+                        <div class="s-header__logo">
+                            <a href="" class="s-header__logo-link">
+                                <img class="s-header__logo-img s-header__logo-img-default"
+                                    src="images/logo.png" alt="imax Logo">
+                                <img class="s-header__logo-img s-header__logo-img-shrink"
+                                    src="images/logo.png" alt="imax Logo">
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+                    <div class="s-header__navbar-row-col">
+                        <!-- Trigger -->
+                        <a href="javascript:void(0);" class="s-header__trigger js__trigger">
+                            <span class="s-header__trigger-icon"></span>
+                            <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewBox="0 0 54 54">
+                                <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25"
+                                    stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                            </svg>
+                        </a>
+                        <!-- End Trigger -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar -->
+
+        <!-- Overlay -->
+        <div class="s-header-bg-overlay js__bg-overlay">
+            <!-- Nav -->
+            <nav class="s-header__nav js__scrollbar mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar"
+                style="position: relative; overflow: visible;">
+                <div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" tabindex="0">
+                    <div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                        style="position:relative; top:0; left:0;" dir="ltr">
+                        <div class="container-fluid">
+                            <!-- Menu List -->
+                            <ul class="list-unstyled s-header__nav-menu">
+                                <li class="s-header__nav-menu-item"><a
+                                        class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active"
+                                        href="http://worldwebminds.tech/">World Web Minds</a></li>
+                                <li class="s-header__nav-menu-item"><a
+                                        class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                        href="emailto:rahulphp6@gmail.com">Web Development</a></li>
+                            </ul>
+                            <!-- End Menu List -->
+
+                            <!-- Menu List -->
+                            <ul class="list-unstyled s-header__nav-menu">
+                                <li class="s-header__nav-menu-item"><a
+                                        class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                        href="http://worldwebminds.tech/about.php">About</a></li>
+                                <li class="s-header__nav-menu-item"><a
+                                        class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                        href="http://worldwebminds.tech/#js__scroll-to-section">Services</a></li>
+                                <li class="s-header__nav-menu-item"><a
+                                        class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                        href="http://worldwebminds.tech/faq.php">FAQ</a></li>
+                                <li class="s-header__nav-menu-item"><a
+                                        class="s-header__nav-menu-link s-header__nav-menu-link-divider"
+                                        href="http://worldwebminds.tech/contact.php">Contact us</a></li>
+                            </ul>
+                            <!-- End Menu List -->
+                        </div>
+                    </div>
+                </div>
+                <div id="mCSB_1_scrollbar_vertical"
+                    class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical"
+                    style="display: none;">
+                    <div class="mCSB_draggerContainer">
+                        <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                            style="position: absolute; min-height: 50px; height: 0px; top: 0px;"
+                            oncontextmenu="return false;">
+                            <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                        </div>
+                        <div class="mCSB_draggerRail"></div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Action -->
+            <ul class="list-inline s-header__action s-header__action--rb">
+                <li class="s-header__action-item">
+                    <a class="s-header__action-link" href="https://www.facebook.com/rahulsharmashamli">
+                        <i class="g-padding-r-5--xs ti-facebook"></i>
+                        <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
+                    </a>
+                </li>
+                <li class="s-header__action-item">
+                    <a class="s-header__action-link" href="https://www.fiverr.com/rahulphp6">
+                        <i class="fa fa-fiverr"></i>
+                        <span class="g-display-none--xs g-display-inline-block--sm">Feverr</span>
+                    </a>
+                </li>
+                <li class="s-header__action-item">
+                    <a class="s-header__action-link" href="https://www.facebook.com/rahulphp6">
+                        <i class="g-padding-r-5--xs ti-twitter"></i>
+                        <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
+                    </a>
+                </li>
+                <li class="s-header__action-item">
+                    <a class="s-header__action-link" href="#">
+                        <i class="g-padding-r-5--xs ti-instagram"></i>
+                        <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End Action -->
+        </div>
+        <!-- End Overlay -->
+    </header>
+    <!--========== END HEADER ==========-->
+
+    <!--========== SWIPER SLIDER ==========-->
+    <section class="body">
+        <div class="m-intro">
+            <div class="e-text">
+                <h1>BUILDING YOUR SUCCESS ONLINE</h1>
+                <span><b>Get Online Today!</b> &amp; grow your business with the help of website services.<br> We are
+                    providing all type of services related to website.</span><br><br><br>
+                <a href="mailto:rahulphp6@gmail.com" class="btn btn-primary">Get Quote</a>
+            </div>
+            <div id="particles-js" class="e-particles-blue_off">
+                <div class="my_shape" data-front="true" data-style="mountains" data-position="bottom">
+                    <svg class="nectar-shape-divider" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1000 300" preserveAspectRatio="none">
+                        <path
+                            d="M 1014 264 v 122 h -808 l -172 -86 s 310.42 -22.84 402 -79 c 106 -65 154 -61 268 -12 c 107 46 195.11 5.94 275 137 z">
+                        </path>
+
+                        <path
+                            d="M -302 55 s 235.27 208.25 352 159 c 128 -54 233 -98 303 -73 c 92.68 33.1 181.28 115.19 235 108 c 104.9 -14 176.52 -173.06 267 -118 c 85.61 52.09 145 123 145 123 v 74 l -1306 10 z">
+                        </path>
+
+                        <path
+                            d="M -286 255 s 214 -103 338 -129 s 203 29 384 101 c 145.57 57.91 178.7 50.79 272 0 c 79 -43 301 -224 385 -63 c 53 101.63 -62 129 -62 129 l -107 84 l -1212 12 z">
+                        </path>
+
+                        <path
+                            d="M -24 69 s 299.68 301.66 413 245 c 8 -4 233 2 284 42 c 17.47 13.7 172 -132 217 -174 c 54.8 -51.15 128 -90 188 -39 c 76.12 64.7 118 99 118 99 l -12 132 l -1212 12 z">
+                        </path>
+
+                        <path
+                            d="M -12 201 s 70 83 194 57 s 160.29 -36.77 274 6 c 109 41 184.82 24.36 265 -15 c 55 -27 116.5 -57.69 214 4 c 49 31 95 26 95 26 l -6 151 l -1036 10 z">
+                        </path>
+                    </svg>
+                </div>
+                <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1366"
+                    height="683"></canvas>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/particles.min.js"></script>
+    <script type="text/javascript">
+        particlesJS("particles-js", { "particles": { "number": { "value": 14, "density": { "enable": true, "value_area": 236.7442924896818 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "images/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script> <!--========== END SWIPER SLIDER ==========-->
+
+    <!--========== PAGE CONTENT ==========-->
+    <!-- Features -->
+    <main>
+        <section class="section intro">
+            <div class="container">
+                <h4>wWm Provide Below Services</h4>
+                <p>No matter, you are a beginner who wants to post your first image on this platform<br> or the one who
+                    has been using Instagram and now desires to use it for boosting your presence<br></p>
+            </div>
+        </section>
+        <section class="section teaser teaserYarns mobileCenter">
+            <div class="sectionImg"><img src="images/wd.png" alt=""></div>
+            <div class="sectionCopy" data-aos="fade-up">
+                <h3>Website Development Services</h3>
+                <p>Custom website development doesn’t always mean a high cost and a
+                    very complex website. We can build you a dynamic website that
+                    transforms itself according to the need of the moment. We can develop a
+                    website for your business that will scale smoothly according to your
+                    visitors’ screen size. A highly slick front-end and a robust,
+                    always-functioning back-end: we excel at both sides of the spectrum.
+                    We cover all major development platforms and programming
+                    languages. We can also customize avant-garde CMS systems and frameworks.
+                </p>
+                <a href="emailto:rahulphp6@gmail.com" class="button">Get a Free Quote Now!</a>
+            </div>
+        </section>
+        <section class="section teaser teaserPatterns mobileCenter">
+            <div class="sectionImg">
+                <img src="images/a.png" alt="">
+            </div>
+            <div class="sectionCopy" data-aos="fade-up">
+                <h3>Digital Marketing</h3>
+                <p>We will improve your search engine rankings for all your
+                    important keywords. Rather than guesswork, we use advanced keyword
+                    research tools to first find out exactly what people are using to find
+                    businesses and services in your category and then optimize your
+                    individual web pages for those keywords. By combining web analytics and
+                    high-quality content, we will get you top rankings on the first page of
+                    search results.</p>
+                <a href="emailto:rahulphp6@gmail.com" class="button">Submit Your Website</a>
+            </div>
+        </section>
+        <section class="section teaser teaserAccessories mobileCenter">
+            <div class="sectionImg"><img src="images/w.png" alt=""></div>
+            <div class="sectionCopy" data-aos="fade-up">
+                <h3>Web Designing</h3>
+                <p>This explains how noteworthy it is to get a remarkable web
+                    presence.
+                    An innovative and technically advanced website is the foundation of your
+                    brand’s online presence. Official website of every business acts as its
+                    virtual office space, which is easily accessible to its actual and
+                    potential customers by using their internet browser. Thus, its unique,
+                    clean and constructive design is required to engage the targeted
+                    visitor. Therefore, it is important for you to select such creative
+                    website designers to construct your virtual office, who understand your
+                    concept and work accordingly.
+                </p>
+                <a href="emailto:rahulphp6@gmail.com" class="button">Design Now</a>
+            </div>
+        </section>
+        <section class="section teaser teaserPatterns mobileCenter">
+            <div class="sectionImg">
+                <img src="images/a.png" alt="">
+            </div>
+            <div class="sectionCopy" data-aos="fade-up">
+                <h3>PSD to Theme/ template / HTML Convertion</h3>
+                <p>We cut off the PSD pictures, and then mix up or merge the cut
+                    off layers in order to put in some crucial elements. All cut off layers
+                    are merged in a logical manner like the content, column, images, header,
+                    and footer. For avoiding any sort of technical issues, our experts use
+                    pixel perfect technique of hand coding which allows the HTML website to
+                    be opened on the multiple web servers all over the globe whether a user
+                    opening on smart phones or a desktop. With the designing of responsive
+                    HTML website, our team lowers the cost of managing a website and allow
+                    the customers save a huge amount of time. It turns out to be simple for
+                    them to control &amp; keep a single HTML website management via a single
+                    control interface that can be optimized without difficulty.
+                </p>
+                <a href="emailto:rahulphp6@gmail.com" class="button">Submit Your Website</a>
+            </div>
+        </section>
+        <section class="cms_boxes">
+            <div class="container">
+                <div class="row">
+                    <ul class="cms_single">
+                        <li><a href="" title="cms_single"><i class="fa fa-wordpress"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-opencart"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-paypal"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-joomla"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-drupal"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-css3"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-html5"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-windows"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-yoast"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-yelp"></i></a></li>
+                        <li><a href="" title="cms_single"><i class="fa fa-edit"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End Features -->
+
+    <!-- Parallax -->
+    <div class="js__parallax-window"
+        style="background: url(&quot;images/background6.jpg&quot;) 50% 57px no-repeat fixed;">
+        <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+            <div class="g-margin-b-80--xs">
+                <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white">The Fastest Way To
+                    Develop</h2>
+            </div>
+            <a href="#services" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Learn More</a>
+        </div>
+    </div>
+    <!-- End Parallax -->
+
+    <!-- Culture -->
+    <!-- <div class="g-promo-section">
+            <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+                <div class="row">
+                    <div class="col-md-4 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
+                        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Culture</p>
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md">About</h2>
+                        </div>
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md">World Web Minds</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <p class="g-font-size-18--xs">We aim high at being focused on building relationships with our clients and community. Using our creative gifts drives this foundation. The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                        <p class="g-font-size-18--xs">Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 g-promo-section__img-right--lg g-bg-position--center g-height-100-percent--md js__fullwidth-img">
+                <img class="images-responsive" src="images/970x970/03.jpg" alt="Image">
+            </div>
+        </div> -->
+    <!-- End Culture -->
+
+    <!-- Subscribe -->
+    <div class="js__parallax-window"
+        style="background: url(&quot;img/1920x1080/07.jpg&quot;) 50% 57px no-repeat fixed;">
+        <div class="g-container--sm g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+            <div class="g-margin-b-80--xs">
+                <p
+                    class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">
+                    Subscribe</p>
+                <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Join Over 1000+ People</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                    <form class="input-group">
+                        <input type="email" class="form-control s-form-v1__input g-radius--left-50" name="email"
+                            placeholder="Enter your email">
+                        <span class="input-group-btn">
+                            <button type="submit"
+                                class="s-btn s-btn-icon--md s-btn-icon--white-brd s-btn--white-brd g-radius--right-50"><i
+                                    class="ti-arrow-right"></i></button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Subscribe -->
+
+
+
+    <!-- Counter -->
+    <div class="js__parallax-window"
+        style="background: url(&quot;img/1920x1080/06.jpg&quot;) 50% 57px no-repeat fixed;">
+        <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 g-full-width--xs g-margin-b-70--xs g-margin-b-0--lg">
+                    <div class="g-text-center--xs">
+                        <div class="g-margin-b-10--xs">
+                            <figure class="g-display-inline-block--xs g-font-size-70--xs g-color--white js__counter">6
+                            </figure>
+                            <span class="g-font-size-40--xs g-color--white">k</span>
+                        </div>
+                        <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                        <h4 class="g-font-size-18--xs g-color--white">Lines of Code</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 g-full-width--xs g-margin-b-70--xs g-margin-b-0--lg">
+                    <div class="g-text-center--xs">
+                        <figure
+                            class="g-display-block--xs g-font-size-70--xs g-color--white g-margin-b-10--xs js__counter">
+                            5</figure>
+                        <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                        <h4 class="g-font-size-18--xs g-color--white">Award Winners</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 g-full-width--xs g-margin-b-70--xs g-margin-b-0--sm">
+                    <div class="g-text-center--xs">
+                        <figure
+                            class="g-display-block--xs g-font-size-70--xs g-color--white g-margin-b-10--xs js__counter">
+                            15</figure>
+                        <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                        <h4 class="g-font-size-18--xs g-color--white">Multiple Pages</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 g-full-width--xs">
+                    <div class="g-text-center--xs">
+                        <div class="g-margin-b-10--xs">
+                            <figure class="g-display-inline-block--xs g-font-size-70--xs g-color--white js__counter">2
+                            </figure>
+                            <span class="g-font-size-40--xs g-color--white">x</span>
+                        </div>
+                        <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                        <h4 class="g-font-size-18--xs g-color--white">Faster Support</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Counter -->
+
+    <!-- Feedback Form -->
+    <div class="g-bg-color--sky-light" id="contacts">
+        <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+            <div class="g-text-center--xs g-margin-b-80--xs">
+                <p
+                    class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">
+                    Feedback</p>
+                <h2 class="g-font-size-32--xs g-font-size-36--md">Send us a note</h2>
+            </div>
+            <form method="post" action="contact.php">
+                <div class="row g-margin-b-40--xs">
+                    <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
+                        <div class="g-margin-b-20--xs">
+                            <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Name">
+                        </div>
+                        <div class="g-margin-b-20--xs">
+                            <input type="email" name="email" required=""
+                                class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
+                        </div>
+                        <input type="text" name="phone" class="form-control s-form-v2__input g-radius--50"
+                            placeholder="Phone">
+                    </div>
+                    <div class="col-sm-6">
+                        <textarea name="message" class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs"
+                            rows="8" placeholder="* Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row g-margin-b-40--xs">
+                    <div class="col-sm-4">
+                        <div class="g-margin-b-20--xs">
+                            <input type="number" class="form-control s-form-v2__input g-radius--50" name="num1"
+                                value="9" readonly="readonly">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="g-margin-b-20--xs">
+                            <input type="number" class="form-control s-form-v2__input g-radius--50" name="num2"
+                                value="1" readonly="readonly">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="g-margin-b-20--xs">
+                            <input type="number" class="form-control s-form-v2__input g-radius--50" name="totalVarify"
+                                placeholder="total sum?">
+                        </div>
+                    </div>
+                </div>
+                <div class="g-text-center--xs">
+                    <button type="submit" name="submit"
+                        class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Feedback Form -->
+
+    <!-- Google Map -->
+    <section class="s-google-map">
+        <iframe src="js/embed.htm" frameborder="0"
+            style="border:0;width: 100%;height: 350px" allowfullscreen=""></iframe>
+    </section>
+    <!-- End Google Map -->
+    <!-- Clients -->
+    <div class="g-bg-color--sky-light">
+        <div class="g-container--md g-padding-y-80--xs g-padding-y-125--sm">
+            <div class="s-swiper js__swiper-clients swiper-container-horizontal">
+                <div class="swiper-wrapper" style="transform: translate3d(-990px, 0px, 0px); transition-duration: 0ms;">
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="s-clients-v1" src="js/01-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
+                            <img class="s-clients-v1" src="js/02-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">
+                            <img class="s-clients-v1" src="js/03-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">
+                            <img class="s-clients-v1" src="js/04-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="4"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                            <img class="s-clients-v1" src="js/05-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="s-clients-v1" src="js/01-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
+                            <img class="s-clients-v1" src="js/02-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">
+                            <img class="s-clients-v1" src="js/03-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">
+                            <img class="s-clients-v1" src="js/04-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                            <img class="s-clients-v1" src="js/05-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="s-clients-v1" src="js/01-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
+                            <img class="s-clients-v1" src="js/02-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">
+                            <img class="s-clients-v1" src="js/03-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">
+                            <img class="s-clients-v1" src="js/04-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"
+                        style="width: 148px; margin-right: 50px;">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                            <img class="s-clients-v1" src="js/05-dark.png"
+                                alt="Clients Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Clients -->
+    <!--========== END PAGE CONTENT ==========-->
+
+    <!--========== FOOTER ==========-->
+    <footer class="g-bg-color--dark">
+        <!-- Links -->
+        <div class="g-hor-divider__dashed--white-opacity-lightest">
+            <div class="container g-padding-y-80--xs">
+                <div class="row">
+                    <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+                        <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Home</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity"
+                                    href="http://worldwebminds.tech/about.php">About</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity"
+                                    href="http://worldwebminds.tech/#js__scroll-to-section">Our Services</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity"
+                                    href="http://worldwebminds.tech/contact.php">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+                        <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Subscribe to Our
+                                    Newsletter</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Twitter</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Facebook</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">Instagram</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity" href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">
+                        <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+                            <li><a class="g-font-size-15--xs g-color--white-opacity"
+                                    href="http://worldwebminds.tech/privacy.php">Privacy Policy</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity"
+                                    href="http://worldwebminds.tech/faq.php">Faq</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity"
+                                    href="http://worldwebminds.tech/refund-policy.php">Refund Policy</a></li>
+                            <li><a class="g-font-size-15--xs g-color--white-opacity"
+                                    href="http://worldwebminds.tech/terms.php">Terms &amp; Condition</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">
+                        <h3 class="g-font-size-18--xs g-color--white">World Web Minds</h3>
+                        <p class="g-color--white-opacity"><i class="fa fa-map-marker" aria-hidden="true"></i> Brij Vihar
+                            Delhi-NCR INDIA</p>
+                        <ul class="f_details">
+                            <li><a href="tel:+91-9990099238"><i class="fa fa-phone" aria-hidden="true"></i>
+                                    +91-9990099238</a></li>
+                            <li><a href="mailto:info@imaxxetech.com"><i class="fa fa-envelope fa"
+                                        aria-hidden="true"></i> info@worldwebminds.tech</a></li>
+
+                        </ul>
+                        <ul class="cards">
+                            <li><i class="fa fa-cc-visa" aria-hidden="true" title="visa"></i></li>
+                            <li><i class="fa fa-cc-paypal" aria-hidden="true" title="paypal"></i></li>
+                            <li><i class="fa fa-cc-mastercard" aria-hidden="true" title="mastercard"></i></li>
+                            <li><i class="fa fa-cc-amex" aria-hidden="true" title="american express"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Links -->
+
+        <!-- Copyright -->
+        <!-- <div class="container g-padding-y-50--xs">
+        <div class="row">
+            <div class="col-xs-6">
+                <a href="index.html">
+                    <img class="g-width-100--xs g-height-auto--xs" src="images/logo.png" alt="imax Logo">
+                </a>
+            </div>
+            <div class="col-xs-6 g-text-right--xs">
+                <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="#">iMaxxe Tech - FZE</a> Theme Powered by: <a href="@rahulphp6">rahulphp6</a></p>
+            </div>
+        </div>
+    </div> -->
+        <!-- End Copyright -->
+    </footer> <!--========== END FOOTER ==========-->
+
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
+
+    <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
+    <!-- Vendor -->
+
+    <script src="js/jquery.back-to-top.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/waypoint.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="js/jquery.wow.min.js"></script>
+
+    <!-- General Components and Settings -->
+    <script src="js/global.min.js"></script>
+    <script src="js/header-sticky.min.js"></script>
+    <script src="js/scrollbar.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/counter.min.js"></script>
+    <script src="js/portfolio-3-col.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/google-map.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--========== END JAVASCRIPTS ==========-->
+
+
+
+
+</body><!-- End Body -->
+
+</html>
