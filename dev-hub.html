@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rahulphp6/dev-hub - Rahul Sharma | Senior Backend & PHP Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darker: '#090d16',
+                        dark: '#0f172a',
+                        card: '#1e293b',
+                        bordercolor: '#334155',
+                        accent: '#38bdf8',
+                        neon: '#06b6d4'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Fira Code', monospace; }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="bg-darker text-slate-100 min-h-screen flex flex-col selection:bg-cyan-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-inner flex items-center justify-center gap-2">
+        <i class="fa-solid fa-terminal animate-pulse"></i>
+        <span>Welcome to <strong>rahulphp6 Dev Hub</strong> — Rahul Sharma's Open Source Scripts & Backend Toolkit!</span>
+        <a href="#projects" class="underline hover:text-cyan-200 ml-1">Explore Projects &rarr;</a>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="border-b border-bordercolor bg-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-cyan-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 text-white font-bold text-xl code-font">
+                    &lt;r&gt;
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg sm:text-xl font-bold tracking-tight code-font text-white">rahulphp6<span class="text-cyan-400">/dev-hub</span></span>
+                        <span class="bg-cyan-500/10 text-cyan-400 text-xs px-2 py-0.5 rounded-full border border-cyan-500/20 font-mono hidden sm:inline-block">v2.5.0</span>
+                    </div>
+                    <p class="text-xs text-slate-400 hidden sm:block">Senior Backend Specialist & PHP Developer</p>
+                </div>
+            </div>
+
+            <!-- Quick Navigation & Stats -->
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+                    <div class="flex items-center gap-1.5 bg-slate-800/60 px-3 py-1.5 rounded-lg border border-slate-700/50">
+                        <i class="fa-solid fa-folder-open text-cyan-400"></i>
+                        <span id="stat-projects-count" class="font-semibold text-white">0</span> <span class="text-xs text-slate-400">Projects</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 bg-slate-800/60 px-3 py-1.5 rounded-lg border border-slate-700/50">
+                        <i class="fa-solid fa-download text-emerald-400"></i>
+                        <span class="font-semibold text-white">100%</span> <span class="text-xs text-slate-400">Direct G-Drive</span>
+                    </div>
+                </div>
+
+                <a href="#about" class="hidden sm:inline-flex text-xs font-semibold text-slate-300 hover:text-cyan-400 transition-colors">
+                    About Me
+                </a>
+
+                <button onclick="openContributeModal()" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-4 py-2 rounded-xl text-sm font-semibold shadow-lg shadow-cyan-500/25 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-plus-circle"></i>
+                    <span>Submit Project</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Search & Filters -->
+    <section class="relative overflow-hidden py-12 sm:py-16 bg-gradient-to-b from-dark to-darker border-b border-bordercolor">
+        <!-- Background Glow effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-cyan-300 mb-6 shadow-sm">
+                <i class="fa-solid fa-user-tie text-cyan-400 text-sm"></i>
+                <span>Rahul Sharma — Senior Web Developer & Backend Specialist</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+                Build Faster with <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400">Rahul's Open Source Stack</span>
+            </h1>
+            <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mb-8">
+                Download ready-to-use PHP boilerplate code, secure auth wrappers, database helpers, custom CRM/ERP modules, and WordPress scripts instantly via Google Drive. No signup required.
+            </p>
+
+            <!-- Search and Filter Bar -->
+            <div class="max-w-3xl mx-auto bg-card/90 border border-bordercolor p-3 rounded-2xl shadow-2xl backdrop-blur-md">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="relative flex-1">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" id="searchInput" oninput="filterProjects()" placeholder="Search by title, keyword, or function (e.g., CRM, PDO, API, ERP)..." 
+                            class="w-full bg-slate-900/90 text-white placeholder-slate-500 text-sm rounded-xl pl-11 pr-4 py-3 border border-slate-700 focus:outline-none focus:border-cyan-500 transition-colors">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select id="sortBy" onchange="filterProjects()" class="bg-slate-900 text-slate-300 text-sm rounded-xl px-4 py-3 border border-slate-700 focus:outline-none focus:border-cyan-500 cursor-pointer">
+                            <option value="latest">Sort: Latest Updated</option>
+                            <option value="popular">Sort: Most Downloaded</option>
+                            <option value="az">Sort: Title (A-Z)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Tag Filter Pills -->
+                <div class="flex flex-wrap items-center gap-2 mt-3 pt-3 border-t border-slate-800" id="tagFilterContainer">
+                    <button onclick="setTag('All')" class="tag-btn active-tag px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-cyan-500 text-white shadow-sm" data-tag="All">
+                        <i class="fa-solid fa-globe mr-1"></i> All Projects
+                    </button>
+                    <button onclick="setTag('PHP')" class="tag-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700" data-tag="PHP">
+                        <i class="fa-brands fa-php mr-1"></i> PHP Core
+                    </button>
+                    <button onclick="setTag('MySQL')" class="tag-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700" data-tag="MySQL">
+                        <i class="fa-solid fa-database mr-1"></i> MySQL / PDO
+                    </button>
+                    <button onclick="setTag('API')" class="tag-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700" data-tag="API">
+                        <i class="fa-solid fa-network-wired mr-1"></i> REST & Third-Party API
+                    </button>
+                    <button onclick="setTag('ERP')" class="tag-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700" data-tag="ERP">
+                        <i class="fa-solid fa-boxes-stacked mr-1"></i> CRM & ERP
+                    </button>
+                    <button onclick="setTag('WordPress')" class="tag-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700" data-tag="WordPress">
+                        <i class="fa-brands fa-wordpress mr-1"></i> WordPress
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me / What I Do Section -->
+    <section id="about" class="py-16 bg-dark border-b border-bordercolor relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                    <i class="fa-solid id-badge fa-id-badge"></i> About Rahul Sharma
+                </div>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Senior Web Developer & Backend Specialist
+                </h2>
+                <p class="text-slate-400 text-sm mt-3">
+                    Hello! I'm <span class="text-cyan-400 font-semibold">Rahul Sharma (rahulphp6)</span>. I specialize in crafting robust backend architectures, high-performance database systems, and seamless third-party service integrations for global businesses.
+                </p>
+            </div>
+
+            <!-- Expertise Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-card/80 border border-bordercolor rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="h-12 w-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4 font-bold">
+                        <i class="fa-brands fa-php"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Backend PHP Development</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Building secure, scalable, and object-oriented PHP MVC applications, custom micro-frameworks, and high-speed server-side scripts.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-card/80 border border-bordercolor rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="h-12 w-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">MySQL Database Design</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Optimized database indexing, complex relational data modeling, query tuning, and bulletproof PDO abstraction wrappers.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-card/80 border border-bordercolor rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="h-12 w-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Third-Party API Integrations</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Seamlessly connecting Zoho Books, Twilio SMS, WhatsApp Business API, Ziina payment gateways, and Stripe webhooks.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-card/80 border border-bordercolor rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="h-12 w-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Custom CRM & Logistics ERP</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Tailor-made enterprise resource planning and customer relationship management solutions tailored to track shipments, orders, and workflows.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-card/80 border border-bordercolor rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="h-12 w-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-brands fa-wordpress"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">WordPress Customization</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Developing custom plugins, bespoke themes, AJAX database tables, and performance-tuned WordPress environments.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-card/80 border border-bordercolor rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                    <div class="h-12 w-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Digital Marketing Services</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Technical SEO audit, web performance speed optimization, conversion tracking integration, and structured metadata implementation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid Section -->
+    <main id="projects" class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-code text-cyan-400"></i> Open Source Scripts & ERP Modules
+                </h2>
+                <p class="text-sm text-slate-400">Click any project card to view documentation or download directly from Google Drive.</p>
+            </div>
+            <div id="resultsCount" class="text-sm text-slate-400 font-mono">Showing all projects</div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamically populated via JavaScript -->
+        </div>
+
+        <!-- Empty State (Hidden by default) -->
+        <div id="emptyState" class="hidden text-center py-20">
+            <div class="h-20 w-20 bg-slate-800 rounded-2xl flex items-center justify-center mx-auto mb-4 text-slate-500 text-3xl">
+                <i class="fa-solid fa-face-frown"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-1">No matching projects found</h3>
+            <p class="text-slate-400 text-sm mb-4">Try adjusting your search query or tag filter.</p>
+            <button onclick="resetFilters()" class="bg-slate-800 hover:bg-slate-700 text-white text-sm px-4 py-2 rounded-xl border border-slate-700 transition-colors">
+                Clear Search & Filters
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Contribute / Submit Info Banner -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-cyan-500/30 rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                <div class="space-y-2 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-handshake"></i> Developer Community
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white">Have a useful PHP script or helper to share?</h3>
+                    <p class="text-slate-300 text-sm max-w-xl">
+                        Contribute to rahulphp6 dev hub! Submit your Google Drive download link and helper details. We review and feature community projects weekly.
+                    </p>
+                </div>
+                <button onclick="openContributeModal()" class="whitespace-nowrap bg-white hover:bg-slate-100 text-slate-900 font-semibold px-6 py-3 rounded-xl shadow-lg transition-all text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-cyan-600"></i>
+                    <span>Submit Your Project Now</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-t border-bordercolor mt-16 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center gap-3">
+                    <div class="h-9 w-9 rounded-lg bg-cyan-500 flex items-center justify-center text-white font-bold code-font text-lg">
+                        &lt;r&gt;
+                    </div>
+                    <span class="text-lg font-bold text-white code-font">rahulphp6<span class="text-cyan-400">/dev-hub</span></span>
+                </div>
+                <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+                    Designed by Rahul Sharma (rahulphp6) for developers, freelancers, and students looking for robust open-source PHP scripts, custom CRM/ERP solutions, and API helpers. Always free, zero hosting cost architecture.
+                </p>
+                <div class="flex items-center gap-3 text-slate-300">
+                    <a href="https://github.com/rahulphp6" target="_blank" class="h-9 w-9 bg-slate-800 hover:bg-cyan-600 hover:text-white rounded-lg flex items-center justify-center transition-colors border border-slate-700" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="h-9 w-9 bg-slate-800 hover:bg-cyan-600 hover:text-white rounded-lg flex items-center justify-center transition-colors border border-slate-700" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:rahulphp6@example.com" class="h-9 w-9 bg-slate-800 hover:bg-cyan-600 hover:text-white rounded-lg flex items-center justify-center transition-colors border border-slate-700" title="Email Rahul">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Quick Tags</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" onclick="setTag('PHP'); return false;" class="hover:text-cyan-400 transition-colors">PHP Core Scripts</a></li>
+                    <li><a href="#" onclick="setTag('MySQL'); return false;" class="hover:text-cyan-400 transition-colors">MySQL & PDO Helpers</a></li>
+                    <li><a href="#" onclick="setTag('API'); return false;" class="hover:text-cyan-400 transition-colors">Zoho & Twilio APIs</a></li>
+                    <li><a href="#" onclick="setTag('ERP'); return false;" class="hover:text-cyan-400 transition-colors">CRM & Logistics ERP</a></li>
+                    <li><a href="#" onclick="setTag('WordPress'); return false;" class="hover:text-cyan-400 transition-colors">WordPress Customization</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Hosting & Tech Info</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                    This portal operates on a serverless static architecture. All project source archives are hosted securely on Google Drive with direct high-speed download links.
+                </p>
+                <div class="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-md text-xs border border-emerald-500/20 font-mono">
+                    <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    System Online & Secure
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 rahulphp6 Developer Hub. Built by Rahul Sharma.</p>
+            <p class="code-font text-slate-600">Static HTML + Tailwind CSS + Google Drive Storage</p>
+        </div>
+    </footer>
+
+    <!-- Project Details & Preview Modal -->
+    <div id="projectModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-card border border-bordercolor w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in fade-in zoom-in duration-200">
+            <!-- Modal Header -->
+            <div class="p-6 border-b border-bordercolor flex items-start justify-between bg-slate-900/50">
+                <div>
+                    <div id="modalTags" class="flex flex-wrap gap-1.5 mb-2"></div>
+                    <h3 id="modalTitle" class="text-xl font-bold text-white">Project Title</h3>
+                    <p id="modalDate" class="text-xs text-slate-400 mt-1 font-mono">Updated: Oct 2026</p>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 h-9 w-9 rounded-xl flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div class="p-6 overflow-y-auto space-y-6 flex-1 text-slate-300 text-sm">
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider font-semibold text-cyan-400 mb-2">Overview</h4>
+                    <p id="modalDescription" class="leading-relaxed text-slate-300"></p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider font-semibold text-cyan-400 mb-2">Key Features & Included Modules</h4>
+                    <ul id="modalFeatures" class="space-y-2 list-disc list-inside text-slate-300 bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                        <!-- Populated dynamically -->
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                    <div>
+                        <div class="text-xs font-semibold text-white">Google Drive Direct Archive</div>
+                        <div class="text-xs text-slate-400 font-mono" id="modalFileSize">Size: ~1.5 MB (.zip)</div>
+                    </div>
+                    <a id="modalDownloadBtn" href="#" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/20 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> Download .ZIP
+                    </a>
+                </div>
+            </div>
+            <!-- Modal Footer -->
+            <div class="p-4 border-t border-bordercolor bg-slate-900/50 flex justify-end">
+                <button onclick="closeModal()" class="bg-slate-800 hover:bg-slate-700 text-white text-sm px-5 py-2 rounded-xl transition-colors">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Project Modal -->
+    <div id="contributeModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-card border border-bordercolor w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+            <div class="p-6 border-b border-bordercolor flex items-center justify-between bg-slate-900/50">
+                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-circle-plus text-cyan-400"></i> Submit PHP Project
+                </h3>
+                <button onclick="closeContributeModal()" class="text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 h-9 w-9 rounded-xl flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm">
+                <p class="text-slate-400 text-xs">
+                    Fill out the form below to submit your open source PHP script or helper. It will be added to your local session queue immediately.
+                </p>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Project Title *</label>
+                    <input type="text" id="contribTitle" placeholder="e.g. Zoho Books Invoice Sync Module" class="w-full bg-slate-900 text-white placeholder-slate-600 rounded-xl px-4 py-2.5 border border-slate-700 focus:outline-none focus:border-cyan-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Category / Tags (comma separated) *</label>
+                    <input type="text" id="contribTags" placeholder="PHP, API, ERP" class="w-full bg-slate-900 text-white placeholder-slate-600 rounded-xl px-4 py-2.5 border border-slate-700 focus:outline-none focus:border-cyan-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Google Drive Download Link *</label>
+                    <input type="url" id="contribLink" placeholder="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" class="w-full bg-slate-900 text-white placeholder-slate-600 rounded-xl px-4 py-2.5 border border-slate-700 focus:outline-none focus:border-cyan-500">
+                    <span class="text-[11px] text-slate-500 mt-1 block">Tip: Use direct G-Drive export download links so users get instant downloads.</span>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Short Description *</label>
+                    <textarea id="contribDesc" rows="3" placeholder="Briefly describe what this project does and how it helps developers..." class="w-full bg-slate-900 text-white placeholder-slate-600 rounded-xl px-4 py-2.5 border border-slate-700 focus:outline-none focus:border-cyan-500"></textarea>
+                </div>
+            </div>
+            <div class="p-4 border-t border-bordercolor bg-slate-900/50 flex items-center justify-end gap-3">
+                <button onclick="closeContributeModal()" class="bg-slate-800 hover:bg-slate-700 text-white text-sm px-4 py-2 rounded-xl transition-colors">Cancel</button>
+                <button onclick="submitNewProject()" class="bg-cyan-500 hover:bg-cyan-400 text-white font-semibold text-sm px-5 py-2 rounded-xl shadow-lg transition-all">Add to Portal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-slate-900 border border-cyan-500/50 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-cyan-400 text-lg" id="toastIcon"></i>
+        <span id="toastMsg" class="text-sm font-medium">Notification message here</span>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Initial set of robust PHP projects created by Rahul Sharma (rahulphp6)
+        const defaultProjects = [
+            {
+                id: 1,
+                title: "Zoho Books & CRM Two-Way API Sync Kit",
+                tags: ["PHP", "API", "ERP"],
+                description: "A production-grade PHP script developed by Rahul Sharma to synchronize customers, invoices, and payment status seamlessly between custom web apps and Zoho Books.",
+                updated: "2026-04-20",
+                downloads: 1840,
+                fileSize: "1.8 MB",
+                features: [
+                    "OAuth 2.0 automated token refresh handler",
+                    "Real-time invoice generation and webhook listener",
+                    "Detailed error logging and transaction rollback guard",
+                    "Compatible with PHP 8.1 / 8.2 and PDO"
+                ],
+                driveLink: "https://drive.google.com/uc?export=download&id=sample_file_id_zoho"
+            },
+            {
+                id: 2,
+                title: "WhatsApp Business API & Twilio Notification Wrapper",
+                tags: ["PHP", "API", "ERP"],
+                description: "Plug-and-play messaging helper class for sending automated order updates, OTP verification codes, and shipping alerts via WhatsApp Business Cloud API and Twilio SMS.",
+                updated: "2026-04-18",
+                downloads: 1420,
+                fileSize: "950 KB",
+                features: [
+                    "Template message formatting and variable substitution",
+                    "Delivery status callback webhook endpoint",
+                    "Rate-limiting protection to prevent API bans",
+                    "Clean CURL wrapper with JSON payload encoding"
+                ],
+                driveLink: "https://drive.google.com/uc?export=download&id=sample_file_id_whatsapp"
+            },
+            {
+                id: 3,
+                title: "Custom Logistics ERP & Waybill Management Module",
+                tags: ["ERP", "MySQL", "PHP"],
+                description: "A comprehensive backend module built for courier and logistics companies to manage consignments, track waybill numbers, calculate distance tariffs, and generate PDF manifests.",
+                updated: "2026-04-14",
+                downloads: 990,
+                fileSize: "3.2 MB",
+                features: [
+                    "Dynamic shipment status tracking state machine",
+                    "Consignment barcode and QR code generation helper",
+                    "Role-based staff permissions (Admin, Dispatcher, Agent)",
+                    "Exportable PDF dispatch reports and invoices"
+                ],
+                driveLink: "https://drive.google.com/uc?export=download&id=sample_file_id_erp"
+            },
+            {
+                id: 4,
+                title: "Ziina & Stripe Multi-Currency Payment Gateway Kit",
+                tags: ["PHP", "API", "Security"],
+                description: "Secure payment gateway integration package supporting Ziina (Middle East regional payments) and Stripe checkout sessions with instant webhook verification.",
+                updated: "2026-04-05",
+                downloads: 780,
+                fileSize: "1.2 MB",
+                features: [
+                    "Secure webhook signature cryptographic check",
+                    "Multi-currency conversion handler",
+                    "Automated order status update upon payment success",
+                    "Complete error handling and customer receipt dispatch"
+                ],
+                driveLink: "https://drive.google.com/uc?export=download&id=sample_file_id_payment"
+            },
+            {
+                id: 5,
+                title: "WordPress Custom Ajax CRUD & Database Table Builder",
+                tags: ["WordPress", "PHP", "MySQL"],
+                description: "A developer toolkit by rahulphp6 to create custom WordPress database tables upon plugin activation, handle secure AJAX requests, and render responsive WP_List_Tables.",
+                updated: "2026-03-29",
+                downloads: 1150,
+                fileSize: "850 KB",
+                features: [
+                    "Activation hook custom SQL schema installer",
+                    "Secure nonce verification and sanitization wrappers",
+                    "AJAX modal form popups for record editing",
+                    "Custom settings page boilerplate"
+                ],
+                driveLink: "https://drive.google.com/uc?export=download&id=sample_file_id_wp"
+            },
+            {
+                id: 6,
+                title: "MySQL PDO Advanced Pagination & Search Class",
+                tags: ["PHP", "MySQL", "Security"],
+                description: "An ultra-secure, injection-proof PHP database helper class that manages large datasets with multi-column sorting, search filters, and responsive UI pagination links.",
+                updated: "2026-03-15",
+                downloads: 1650,
+                fileSize: "320 KB",
+                features: [
+                    "Prepared statements for 100% SQL injection safety",
+                    "Generates clean Tailwind or Bootstrap pagination HTML",
+                    "Persists search queries across page navigation",
+                    "Zero external dependencies"
+                ],
+                driveLink: "https://drive.google.com/uc?export=download&id=sample_file_id_pdo"
+            }
+        ];
+
+        // State variables
+        let projects = [...defaultProjects];
+        let currentTag = 'All';
+
+        // Initialize application on load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProjects(projects);
+            updateStats();
+        });
+
+        // Filter and Search Logic
+        function filterProjects() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const sortBy = document.getElementById('sortBy').value;
+
+            let filtered = projects.filter(p => {
+                const matchesTag = currentTag === 'All' || p.tags.includes(currentTag);
+                const matchesQuery = p.title.toLowerCase().includes(query) || 
+                                     p.description.toLowerCase().includes(query) || 
+                                     p.tags.some(t => t.toLowerCase().includes(query));
+                return matchesTag && matchesQuery;
+            });
+
+            // Sorting
+            if (sortBy === 'latest') {
+                filtered.sort((a, b) => new Date(b.updated) - new Date(a.updated));
+            } else if (sortBy === 'popular') {
+                filtered.sort((a, b) => b.downloads - a.downloads);
+            } else if (sortBy === 'az') {
+                filtered.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            renderProjects(filtered);
+        }
+
+        // Set Tag Filter
+        function setTag(tag) {
+            currentTag = tag;
+            document.querySelectorAll('.tag-btn').forEach(btn => {
+                if (btn.getAttribute('data-tag') === tag) {
+                    btn.className = "tag-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-cyan-500 text-white shadow-sm";
+                } else {
+                    btn.className = "tag-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white border border-slate-700";
+                }
+            });
+            filterProjects();
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            setTag('All');
+        }
+
+        // Render Projects Grid
+        function renderProjects(list) {
+            const grid = document.getElementById('projectsGrid');
+            const emptyState = document.getElementById('emptyState');
+            const resultsCount = document.getElementById('resultsCount');
+
+            resultsCount.textContent = `Showing ${list.length} project${list.length === 1 ? '' : 's'}`;
+
+            if (list.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            grid.innerHTML = list.map(p => `
+                <div class="bg-card border border-bordercolor rounded-2xl p-6 flex flex-col justify-between hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5 transition-all group">
+                    <div>
+                        <!-- Badges & Date -->
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <div class="flex flex-wrap gap-1.5">
+                                ${p.tags.map(t => `<span class="bg-slate-800 text-cyan-400 border border-cyan-500/20 text-[10px] px-2.5 py-0.5 rounded-full font-mono">${t}</span>`).join('')}
+                            </div>
+                            <span class="text-[11px] text-slate-500 font-mono"><i class="fa-regular fa-clock mr-1"></i>${p.updated}</span>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors mb-2 cursor-pointer" onclick="openModal(${p.id})">
+                            ${p.title}
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-slate-400 text-xs line-clamp-3 mb-6 leading-relaxed">
+                            ${p.description}
+                        </p>
+                    </div>
+
+                    <!-- Card Footer Actions -->
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between gap-3">
+                        <div class="text-[11px] text-slate-500 font-mono flex items-center gap-1">
+                            <i class="fa-solid fa-download text-emerald-400"></i> ${p.downloads} dl
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="openModal(${p.id})" class="bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-xs px-3 py-2 rounded-xl border border-slate-700 transition-colors">
+                                Details
+                            </button>
+                            <a href="${p.driveLink}" target="_blank" onclick="incrementDownload(${p.id})" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-xl shadow-md shadow-cyan-500/20 transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-cloud-arrow-down"></i> G-Drive
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Stats Update
+        function updateStats() {
+            document.getElementById('stat-projects-count').textContent = projects.length;
+        }
+
+        // Track downloads locally
+        function incrementDownload(id) {
+            const proj = projects.find(p => p.id === id);
+            if(proj) {
+                proj.downloads++;
+                showToast(`Opening Google Drive download for "${proj.title}"...`);
+                renderProjects(projects);
+            }
+        }
+
+        // Modal Controls
+        function openModal(id) {
+            const p = projects.find(item => item.id === id);
+            if (!p) return;
+
+            document.getElementById('modalTitle').textContent = p.title;
+            document.getElementById('modalDescription').textContent = p.description;
+            document.getElementById('modalDate').textContent = `Last Updated: ${p.updated} | Downloads: ${p.downloads}`;
+            document.getElementById('modalFileSize').textContent = `Archive Size: ${p.fileSize || '~1.5 MB'} (.zip)`;
+            document.getElementById('modalDownloadBtn').href = p.driveLink;
+
+            document.getElementById('modalTags').innerHTML = p.tags.map(t => 
+                `<span class="bg-slate-800 text-cyan-400 border border-cyan-500/20 text-xs px-2.5 py-0.5 rounded-full font-mono">${t}</span>`
+            ).join('');
+
+            document.getElementById('modalFeatures').innerHTML = p.features.map(f => `<li>${f}</li>`).join('');
+
+            const modal = document.getElementById('projectModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Submit Contribution Modal Controls
+        function openContributeModal() {
+            const modal = document.getElementById('contributeModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeContributeModal() {
+            const modal = document.getElementById('contributeModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function submitNewProject() {
+            const title = document.getElementById('contribTitle').value.trim();
+            const tagsInput = document.getElementById('contribTags').value.trim();
+            const link = document.getElementById('contribLink').value.trim();
+            const desc = document.getElementById('contribDesc').value.trim();
+
+            if (!title || !link || !desc) {
+                showToast("Please fill in all mandatory fields.", true);
+                return;
+            }
+
+            const tags = tagsInput ? tagsInput.split(',').map(t => t.trim()).filter(t => t) : ["PHP"];
+
+            const newProj = {
+                id: projects.length + 1,
+                title: title,
+                tags: tags,
+                description: desc,
+                updated: new Date().toISOString().split('T')[0],
+                downloads: 1,
+                fileSize: "1.5 MB",
+                features: ["Community submitted open source module", "Built with modern backend standards"],
+                driveLink: link
+            };
+
+            projects.unshift(newProj);
+            updateStats();
+            filterProjects();
+            closeContributeModal();
+
+            // Clear form
+            document.getElementById('contribTitle').value = '';
+            document.getElementById('contribTags').value = '';
+            document.getElementById('contribLink').value = '';
+            document.getElementById('contribDesc').value = '';
+
+            showToast("Project successfully published to your dev portal!");
+        }
+
+        // Toast Notification
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            const toastIcon = document.getElementById('toastIcon');
+
+            toastMsg.textContent = message;
+            if (isError) {
+                toastIcon.className = "fa-solid fa-triangle-exclamation text-amber-400 text-lg";
+                toast.classList.remove('border-cyan-500/50');
+                toast.classList.add('border-amber-500/50');
+            } else {
+                toastIcon.className = "fa-solid fa-circle-check text-cyan-400 text-lg";
+                toast.classList.remove('border-amber-500/50');
+                toast.classList.add('border-cyan-500/50');
+            }
+
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3500);
+        }
+
+        // Close modal on click outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            const contribModal = document.getElementById('contributeModal');
+            if (event.target === modal) closeModal();
+            if (event.target === contribModal) closeContributeModal();
+        }
+    </script>
+</body>
+</html>
